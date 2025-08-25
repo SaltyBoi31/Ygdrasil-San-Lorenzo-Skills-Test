@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Feedback</title>
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="stylesheet" href="form_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="home.html" class="logo">
+                <img src="logo.png" alt="Bakery Logo">
+            </a>
+            <h2>Asil's Cookies n Bites</h2>
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <a href="#recipes" class="drop-link">Recipes ▼</a>
+                <div class="dropdown-content">
+                    <a href="cookies.html">Cookies</a>
+                    <a href="chocolate_cake.html">Chocolate Cake</a>
+                    <a href="egg_tart.html">Egg Tart</a>
+                    <a href="cupcakes.html">Cupcakes</a>
+                </div>
+            </div>
+            <a href="form.html">Feedback</a>
+        </div>
+        <div class="container">
+            <div class="text_container">
+                <h1 class="home_text">Your Feedback Matters</h1>
+                <p class="home_text">Got any suggestions or reports?
+                    Fill up this form and we'll get back to you!
+                </p>
+            </div>
+            <div class="form_container" id="form_container">
+            <form id="feedback_form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" placeholder="Your Email"><br>
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject">
+                    <option value="Error">Website Error</option>
+                    <option value="Suggest">Suggestions</option>
+                    <option value="Others">Others</option>
+                </select><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea><br>
+                <div id="form_message" style="color:red; margin-bottom:10px;"></div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="form_script.js"></script>
+    </body>
